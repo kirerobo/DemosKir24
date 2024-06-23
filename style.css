@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #181269;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    padding: 0 5%;
+    position: fixed;
+    z-index: 999;
+    transition: 0.3s;
+}
+
+header img {
+    width: 60px;
+    height: 60px;
+    color: white;
+}
+
+header nav {
+    display: flex;
+    gap: 30px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 8px 16px;
+    text-shadow: 0 0 10px #c840ca;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+
+header nav a.active {
+    background: #150C67;
+    color: white;
+}
+
+header nav a:hover {
+    background: #150C67;
+    color: white;
+}
+
+header nav:hover>a:not(:hover) {
+    background: none;
+    color: #86caf1;
+}
+
+header:hover {
+    backdrop-filter: sepia(30%);
+    backdrop-filter: blur(3px);
+}
+
+.home {
+    background: rgb(134, 202, 241);
+    background: radial-gradient(circle, rgba(134, 202, 241, 1) 0%, rgba(45, 24, 155, 1) 39%, rgba(24, 18, 105, 1) 83%);
+    height: 100vh;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+
+.home img {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    pointer-events: none;
+    transition: transform 0.5s ease-out;
+}
+
+.home .title {
+    font-size: 80px;
+    top: 30%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    text-shadow: 0 0 10px #c840ca;
+    color: white;
+    text-align: center;
+}
+
+
+.sejarah {
+    padding: 50px;
+    background: #181269;
+    color: white;
+    position: relative;
+    display: grid;
+    overflow: hidden;
+}
+
+.sejarah h1 {
+    font-size: 40px;
+    text-shadow: 0 0 10px #c840ca;
+}
+
+.struktur {
+    padding: 50px;
+    color: white;
+    position: relative;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: url(struktur/baclgroundstrukturk.png);
+    background-repeat: round;
+    text-shadow: 0 0 10px #c840ca;
+}
+
+.struktur img {
+    width: 250px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #c840ca;
+}
+
+.bagan {
+    display: flex;
+    gap: 300px;
+    align-items: center;
+    justify-content: center;
+}
+
+.achievement {
+    padding: 50px;
+    background: #181269;
+    color: white;
+    position: relative;
+    display: grid;
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+}
+
+.achievement h1 {
+    font-size: 40px;
+    color: white;
+    text-shadow: 0 0 10px #c840ca;
+}
+
+.achievement h2 {
+    text-shadow: 0 0 10px #c840ca;
+}
+
+.dokumentasi {
+    height: 100vh;
+    width: 100%;
+    padding: 50px;
+    background: #181269;
+    color: white;
+    position: relative;
+    display: grid;
+    overflow: hidden;
+}
+
+.dokumentasi h1 {
+    font-size: 40px;
+    color: white;
+    text-shadow: 0 0 10px #c840ca;
+}
+
+.foto {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    overflow-clip-margin: content-box;
+    overflow: clip
+}
+
+.foto img {
+    width: 300px;
+    padding: 10px;
+}
+
+.daftar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: rgb(21, 12, 103);
+    background: linear-gradient(180deg, rgba(21, 12, 103, 1) 20%, rgba(127, 62, 233, 1) 56%, rgba(178, 226, 230, 1) 76%);
+    overflow: hidden;
+}
+
+.daftar img {
+    position: absolute;
+    width: 100%;
+}
+
+.join {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.join a {
+    font-size: 30px;
+    color: #B1EBFE;
+    background-color: transparent;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-weight: 500;
+    position: absolute;
+    z-index: 2;
+    text-decoration: none;
+    box-shadow: 0 0 10px #697BFE;
+    transition: 0.3s;
+}
+
+.join a:hover {
+    background-color: #B1EBFE;
+    color: #150C67;
+}
+
+footer {
+    height: 90px;
+    background-color: #B2E2E6;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 0 10px #697BFE;
+    text-shadow: 0 0 10px #697BFE;
+    padding-top: 5px;
+}
+
+footer h1 {
+    color: #150C67;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.kontak {
+    color: #150C67;
+    display: flex;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.kontak a {
+    text-decoration: none;
+    color: #150C67;
+    padding: 0px 10px;
+}
+
+
+
+
+@media (max-width: 600px) {
+    header {
+        display: flex;
+        padding: 0 2%;
+        height: 70px;
+    }
+
+    header img {
+        width: 40px;
+        height: 40px;
+    }
+
+    header nav {
+        gap: 2px;
+    }
+
+    header nav a {
+        font-size: 13px;
+        padding: 4px 8px;
+    }
+
+    .home {
+        background: linear-gradient(to top, #5c31dc 30%, #181269);
+
+    }
+
+    .home .title {
+        top: 30%;
+        left: 50%;
+    }
+
+    .sejarah h1 {
+        font-size: 39px;
+    }
+
+    .struktur {
+        background-image: url(/struktur/backgroundstruktur.png);
+        background-repeat: round;
+    }
+
+    .struktur img {
+        width: 150px;
+    }
+
+    .bagan {
+        gap: 50px;
+    }
+
+    .daftar {
+        /* background: rgb(112,104,179);
+        background: linear-gradient(0deg, rgba(112,104,179,1) 34%, rgba(96,24,155,1) 58%, rgba(24,18,105,1) 81%); */
+        background: rgb(21, 12, 103);
+        background: linear-gradient(180deg, rgba(21, 12, 103, 1) 13%, rgba(127, 62, 233, 1) 44%, rgba(178, 226, 230, 1) 66%);
+    }
+
+    .daftar .jalan {
+        scale: 3.3;
+        top: 60px;
+    }
+
+    .daftar .humansection {
+        scale: 1.6;
+        right: 25px;
+
+    }
+
+    .join a {
+        font-size: 15px;
+        padding: 5px 10px;
+        font-weight: 500;
+        border-radius: 5px;
+    }
+
+    footer {
+        height: 70px;
+    }
+
+    footer h1 {
+        font-size: 15px;
+    }
+
+    .kontak {
+        padding: 5px;
+        font-size: small;
+    }
+
+}
