@@ -22,6 +22,7 @@ header {
     position: fixed;
     z-index: 999;
     transition: 0.3s;
+    backdrop-filter: blur(1px);
 }
 
 header img {
@@ -61,10 +62,6 @@ header nav:hover>a:not(:hover) {
     color: #86caf1;
 }
 
-header:hover {
-    backdrop-filter: sepia(30%);
-    backdrop-filter: blur(3px);
-}
 
 .home {
     background: rgb(134, 202, 241);
@@ -122,6 +119,15 @@ header:hover {
     text-shadow: 0 0 10px #c840ca;
 }
 
+.struktur h1 {
+    font-size: 30px;
+}
+
+.pilar p {
+    font-weight: 700;
+    font-size: 25px;
+}
+
 .struktur img {
     width: 250px;
     border-radius: 20px;
@@ -155,22 +161,6 @@ header:hover {
     text-shadow: 0 0 10px #c840ca;
 }
 
-.dokumentasi {
-    height: 100vh;
-    width: 100%;
-    padding: 50px;
-    background: #181269;
-    color: white;
-    position: relative;
-    display: grid;
-    overflow: hidden;
-}
-
-.dokumentasi h1 {
-    font-size: 40px;
-    color: white;
-    text-shadow: 0 0 10px #c840ca;
-}
 
 .foto {
     display: flex;
@@ -200,6 +190,7 @@ header:hover {
 .daftar img {
     position: absolute;
     width: 100%;
+    bottom: 0;
 }
 
 .join {
@@ -299,30 +290,44 @@ footer h1 {
     }
 
     .sejarah h1 {
-        font-size: 39px;
+        font-size: 30px;
     }
 
     .struktur {
-        background-image: url(struktur/backgroundstruktur.png);
-        background-repeat: round;
+        background-image: url(/struktur/backgroundstruktur.png);
+        background-repeat: repeat-y;
     }
 
     .struktur img {
         width: 150px;
     }
 
+    .struktur h1 {
+        font-size: 25px;
+    }
+
+    .pilar p {
+        font-size: 15px;
+    }
+
     .bagan {
         gap: 50px;
     }
 
+    .achievement h1 {
+        font-size: 30px;
+    }
+
     .daftar {
+        /* background: rgb(112,104,179);
+        background: linear-gradient(0deg, rgba(112,104,179,1) 34%, rgba(96,24,155,1) 58%, rgba(24,18,105,1) 81%); */
         background: rgb(21, 12, 103);
         background: linear-gradient(180deg, rgba(21, 12, 103, 1) 13%, rgba(127, 62, 233, 1) 44%, rgba(178, 226, 230, 1) 66%);
+        height: 60vh;
     }
 
     .daftar .jalan {
-        scale: 3.3;
-        top: 60px;
+        scale: 1.6;
     }
 
     .daftar .humansection {
