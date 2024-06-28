@@ -182,79 +182,96 @@ header nav:hover>a:not(:hover) {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background: rgb(21, 12, 103);
-    background: linear-gradient(180deg, rgba(21, 12, 103, 1) 20%, rgba(127, 62, 233, 1) 56%, rgba(178, 226, 230, 1) 76%);
     overflow: hidden;
+    background: linear-gradient(to top, #5c31dc 30%, #181269);
+    color: #fff;
 }
 
 .daftar img {
     position: absolute;
-    width: 100%;
     bottom: 0;
+    width: 100%;
+    pointer-events: none;
+}
+
+
+.container-join {
+    text-align: center;
+    width: 80%;
+    max-width: 1200px;
+    backdrop-filter: blur(1px);
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    
+    
 }
 
 .join {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    margin-bottom: 20px;
 }
 
-.join a {
-    font-size: 30px;
-    color: #B1EBFE;
-    background-color: transparent;
-    border-radius: 10px;
-    padding: 10px 20px;
-    font-weight: 500;
-    position: absolute;
-    z-index: 2;
+.jointitle {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-container {
+    margin-bottom: 20px;
+}
+
+.illustration {
+    width: 100%;
+    max-width: 600px;
+}
+
+.register-button {
+    font-size: 1.5rem;
     text-decoration: none;
-    box-shadow: 0 0 10px #697BFE;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: #86caf1;
+    color: #181269;
+    box-shadow: 0 0 10px #86caf1 ;
+    cursor: pointer;
     transition: 0.3s;
 }
 
-.join a:hover {
-    background-color: #B1EBFE;
-    color: #150C67;
+
+.register-button:hover {
+    background: #181269;
+    color: white;
 }
 
 footer {
-    height: 90px;
-    background-color: #B2E2E6;
-    display: block;
+    margin-top: 20px;
+    font-size: 1rem;
+}
+
+.contact-info {
+    display: flex;
     justify-content: center;
-    align-items: center;
-    text-align: center;
-    box-shadow: 0 0 10px #697BFE;
-    text-shadow: 0 0 10px #697BFE;
-    padding-top: 5px;
+    gap: 20px;
+    margin-top: 10px;
 }
 
-footer h1 {
-    color: #150C67;
-    font-weight: 500;
-    font-size: 20px;
-}
-
-.contact {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-.kontak {
-    color: #150C67;
-    display: flex;
-    border-radius: 10px;
-    padding: 10px;
-}
-
-.kontak a {
+.contact-info a {
     text-decoration: none;
-    color: #150C67;
-    padding: 0px 10px;
+    color: white;
 }
-
 
 
 
@@ -294,7 +311,7 @@ footer h1 {
     }
 
     .struktur {
-        background-image: url(struktur/backgroundstruktur.png);
+        background-image: url(/struktur/backgroundstruktur.png);
         background-repeat: repeat-y;
     }
 
@@ -319,41 +336,25 @@ footer h1 {
     }
 
     .daftar {
-        /* background: rgb(112,104,179);
-        background: linear-gradient(0deg, rgba(112,104,179,1) 34%, rgba(96,24,155,1) 58%, rgba(24,18,105,1) 81%); */
-        background: rgb(21, 12, 103);
-        background: linear-gradient(180deg, rgba(21, 12, 103, 1) 13%, rgba(127, 62, 233, 1) 44%, rgba(178, 226, 230, 1) 66%);
-        height: 60vh;
+        height: 50vh;
     }
 
-    .daftar .jalan {
-        scale: 1.6;
+    .join h1{
+        font-size: 25px;
     }
 
-    .daftar .humansection {
-        scale: 1.6;
-        right: 25px;
-
+    .join p{
+        font-size: 15px;
     }
 
-    .join a {
+    .register-button {
         font-size: 15px;
         padding: 5px 10px;
-        font-weight: 500;
         border-radius: 5px;
     }
 
-    footer {
-        height: 70px;
-    }
-
-    footer h1 {
-        font-size: 15px;
-    }
-
-    .kontak {
-        padding: 5px;
-        font-size: small;
+    .contact-info a {
+        font-size: 10px;
     }
 
 }
