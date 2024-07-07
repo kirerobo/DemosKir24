@@ -365,7 +365,7 @@ footer {
         font-size: 30px;
     }
     .sejarah p {
-        font-size: 12px;
+        font-size: 13px;
     }
 
     .struktur {
@@ -390,7 +390,7 @@ footer {
     }
 
     .achievement {
-        height: 80vh;
+        height: 85vh;
     }
 
     .achievement h1 {
@@ -401,7 +401,7 @@ footer {
         display: block;
     }
     .ach-content p {
-        font-size: 12px;
+        font-size: 13px;
     }
 
     .slide img {
