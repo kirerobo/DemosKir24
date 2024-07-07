@@ -145,11 +145,9 @@ header nav:hover>a:not(:hover) {
     padding: 50px;
     background: #181269;
     color: white;
-    position: relative;
-    display: grid;
-    overflow: hidden;
-    backdrop-filter: blur(10px);
+    height: 70vh;
 }
+
 
 .achievement h1 {
     font-size: 40px;
@@ -157,23 +155,79 @@ header nav:hover>a:not(:hover) {
     text-shadow: 0 0 10px #c840ca;
 }
 
-.achievement h2 {
-    text-shadow: 0 0 10px #c840ca;
-}
-
-
-.foto {
+.ach-content {
     display: flex;
-    width: 100%;
     justify-content: center;
     align-items: center;
-    overflow-clip-margin: content-box;
-    overflow: clip
 }
 
-.foto img {
+
+
+
+.slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: scroll 40s linear infinite;
+    height: 100%;
+
+}
+
+.slide img {
     width: 300px;
-    padding: 10px;
+    height: 250px;
+    margin: 10px;
+
+}
+
+
+.slider {
+    height: 250px;
+    position: relative;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    margin: auto;
+}
+
+.slider::before,
+.slider::after {
+    background: linear-gradient(to right, #181269 0%, rgba(255, 255, 255, 0) 100%);
+    content: '';
+    height: 100%;
+    position: absolute;
+    width: 50%;
+    z-index: 2;
+}
+
+.slider::before {
+    left: 0;
+    top: 0;
+}
+
+.slider::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+}
+
+
+
+
+
+.dok-slider {
+    display: flex;
+    width: calc(250px*16);
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0)
+    }
+
+    100% {
+        transform: translateX(calc(-250px * 9));
+    }
 }
 
 .daftar {
@@ -204,8 +258,8 @@ header nav:hover>a:not(:hover) {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    
-    
+
+
 }
 
 .join {
@@ -245,7 +299,7 @@ header nav:hover>a:not(:hover) {
     border-radius: 5px;
     background: #86caf1;
     color: #181269;
-    box-shadow: 0 0 10px #86caf1 ;
+    box-shadow: 0 0 10px #86caf1;
     cursor: pointer;
     transition: 0.3s;
 }
@@ -306,8 +360,12 @@ footer {
         left: 50%;
     }
 
+
     .sejarah h1 {
         font-size: 30px;
+    }
+    .sejarah p {
+        font-size: 12px;
     }
 
     .struktur {
@@ -331,19 +389,36 @@ footer {
         gap: 50px;
     }
 
+    .achievement {
+        height: 90vh;
+    }
+
     .achievement h1 {
         font-size: 30px;
+    }
+
+    .ach-content {
+        display: block;
+    }
+    .ach-content p {
+        font-size: 12px;
+    }
+
+    .slide img {
+        height: 150px;
+        width: 200px;
+        margin: 5px;
     }
 
     .daftar {
         height: 50vh;
     }
 
-    .join h1{
+    .join h1 {
         font-size: 25px;
     }
 
-    .join p{
+    .join p {
         font-size: 15px;
     }
 
