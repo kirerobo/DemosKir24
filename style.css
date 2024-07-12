@@ -130,6 +130,8 @@ header nav:hover>a:not(:hover) {
 
 .struktur img {
     width: 250px;
+    height: 250px;
+    object-fit: cover;
     border-radius: 20px;
     box-shadow: 0 0 10px #c840ca;
 }
@@ -182,7 +184,7 @@ header nav:hover>a:not(:hover) {
 
 
 .slider {
-    height: 250px;
+    height: 200px;
     position: relative;
     display: grid;
     place-items: center;
@@ -198,6 +200,7 @@ header nav:hover>a:not(:hover) {
     position: absolute;
     width: 50%;
     z-index: 2;
+    overflow: hidden;
 }
 
 .slider::before {
@@ -375,6 +378,7 @@ footer {
 
     .struktur img {
         width: 150px;
+        height: 150px;
     }
 
     .struktur h1 {
@@ -390,7 +394,7 @@ footer {
     }
 
     .achievement {
-        height: 85vh;
+        height: 80vh;
     }
 
     .achievement h1 {
